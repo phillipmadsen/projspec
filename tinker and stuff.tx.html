@@ -1,0 +1,775 @@
+<?php
+
+
+CRUD Create, Read, Update and Delete
+
+public function getArticles($article_id) {
+        $articles = Article::findOrFail($article_id);
+        return view('articles.index')->with('articles', $articles);
+    }
+
+
+
+$shop = Shop::find($shop_id);
+$shop->products()->attach($product_id);
+
+
+$product = product::find($product_id);
+
+$product->images()->attach($product_id);
+
+cat to image
+
+
+
+class Country extends Model
+{
+    public function articles() {
+        return $this->hasManyThrough('App\Models\Article', 'App\Models\User', 'country_id', 'user_id');
+    }
+}
+
+We Provide The Tools, You Create The Masterpiece
+
+fideloper/proxy
+
+
+ https://styleci.io/repos/7548986/shield?style=plastic&branch=5.1.
+
+
+/AF2323/ffffff
+/2851CC/ffffff
+/AF2323/ffffff
+
+
+
+<img data-src=""{!! (($article->path) ? "src='".url($article->path)."'" : '<img src="http://www.placehold.it/1140x600/EFEFEF/AAAAAA?text=no+image" alt=""/>') !!}" alt="...">
+
+
+Longarm quilting machines, Long arm quilting machines, Longarm, Long arm, Quilting machines, Quilting systems, Professional quilting machines, Professional quilting systems, Quilting business, Computerized quilting machines, Computerized longarm quilting machines, Computerized long arm quilting machines, Quilting machine manufacturers, Longarm quilting systems, Long arm quilting systems, Longarm manufacturers, Long arm manufacturers, American quilting machines, American longarm quilting machines, Hand-guided quilting machines, Nolting, APQS, A-1, Prodigy, Innova, Innova longarm quilting, ABM international, Innova longarm, AutoPilot, Navigator, Pantovision, Lightning Stitch
+
+    $notes = User::with([
+            'notes' => function ($query) {
+                $query->orderBy('created_at', 'desc');
+            },
+        'dealer.user.notes.owner'])->findOrFail(Sentinel::getUser()->id); // get customer notes
+
+
+Long Arm Quilting Machines
+Browse Related.
+Long Arm Sewing Machine.
+Handi Quilter.
+Sewing Machine.
+Quilting Frame.
+Quilting Fabric.
+Bernina Sewing Machine.
+Embroidery Machine.
+More items...
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0FCgz40Iudc" frameborder="0" allowfullscreen></iframe>
+
+
+It has happened before, I miss whole movements, eras, and there is probably a decade or two I can’t clearly recall.  I suppose I’m so centered in my own world that stuff passes me by, but not this time.  I didn’t know until recently that there was a free motion quilting movement.  I have stippled things for years and I like free motion sewing but on my home machine with usually an open toe foot. It is quite doable and with lovely results too but it didn’t take my breath away like seeing a long-arm machine for the first time. I knew there were long-arm machines but I thought the designs were all computer generated which is pretty but not awe inspiring.
+
+I saw a long arm machine and I wanted one. I really wanted one but I had two problems…
+
+Not enough space
+Not enough money
+I bought some lottery tickets and figured I would win a couple million and buy a bigger house and I would have both the money and space. Not really sure what happened but it didn’t work because I didn’t win any money and now I was an extra $20 short on my long-arm quilter down payment.  I would have resorted to Plan B but I didn’t really have a backup plan.
+
+Luckily, as I was trolling around the Internet looking at long-arm machines, I spied a mid arm quilting machine.  Again, I hadn’t even known there was such a machine.  I liked the mid arm better than the long-arm since it reduced the problems down to only one….not enough money.  This is the mid-arm I saw and loved.
+
+
+
+
+$order = OrdersModel::where('order_no', $order_no)->firstOrFail();
+
+$order = OrdersModel::with('items.product', 'billingAddress.getCountry', 'billingAddress.getCounty')->findOrFail($order->id);
+
+
+
+
+
+ $user = User::with(
+            'dealer.customers.billingAddress.getCountry',
+            'dealer.customers.billingAddress.getCounty',
+            'dealer.customers.shippingAddress.country',
+            'dealer.customers.shippingAddress.county',
+            'dealer.customers.registeredProducts.product'
+            )->findOrFail(Sentinel::getUser()->id);
+
+
+
+
+
+
+
+
+
+
+B
+Bernina International
+Brother Industries
+E
+Elna (Swiss company)
+F
+Feiyue (Sewing)
+G
+Grace Company
+H
+Husqvarna Sewing Machines
+J
+Janome
+Jones Sewing Machine Company
+Juki
+L
+Leader Sewing Machine
+M
+Merrow Sewing Machine Company
+N
+National Sewing Machine Company
+P
+Pfaff
+S
+Sewmor
+Singer Corporation
+SVP Worldwide
+T
+Tacony Corporation
+Taft-Peirce Manufacturing Company
+Barthélemy Thimonnier
+Tikkakoski (company)
+V
+VSM Group
+W
+White Sewing Machine Company
+
+
+
+
+<div class="col-md-3">
+
+</ul>
+<h3>B</h3>
+<ul>
+    <li>Bernina International</li>
+    <li>Brother Industries</li>
+</ul>
+<h3>E</h3>
+<ul>
+    <li>Elna (Swiss company)</li>
+</ul>
+<h3>F</h3>
+<ul>
+    <li>Feiyue (Sewing)</li>
+</ul>
+<h3>G</h3>
+<ul>
+    <li>Grace Company</li>
+</ul>
+<h3>H</h3>
+<ul>
+    <li>Husqvarna Sewing Machines</li>
+</ul>
+</div>
+<div class="col-md-3">
+<h3>J</h3>
+<ul>
+    <li>Janome</li>
+    <li>Jones Sewing Machine Company</li>
+    <li>Juki</li>
+</ul>
+<h3>L</h3>
+<ul>
+    <li>Leader Sewing Machine</li>
+</ul>
+<h3>M</h3>
+<ul>
+    <li>Merrow Sewing Machine Company</li>
+</ul>
+<h3>N</h3>
+<ul>
+    <li>National Sewing Machine Company</li>
+</ul>
+<h3>P</h3>
+<ul>
+    <li>Pfaff</li>
+</ul>
+</div>
+<div class="col-md-3">
+<h3>S</h3>
+<ul>
+    <li>Sewmor</li>
+    <li>Singer Corporation</li>
+    <li>SVP Worldwide</li>
+</ul>
+<h3>T</h3>
+<ul>
+    <li>Tacony Corporation</li>
+    <li>Taft-Peirce Manufacturing Company</li>
+    <li>Barthélemy Thimonnier</li>
+    <li>Tikkakoski (company)</li>
+</ul>
+<h3>V</h3>
+<ul>
+    <li>VSM Group</li>
+</ul>
+<h3>W</h3>
+<ul>
+    <li>White Sewing Machine Company</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+Long-arm quilters can vastly speed up you’re the production time  of your quilts, compared to normal quilters or hand quilting.
+
+The longarm quilting machine comes equipped with a sewing machine head, a worktable, several fabric rollers, and a metal frame. The overall dimensions of the frame can range from 10 to 14 feet in length by two-and-a-half to four feet in depth.  The machine comes equipped with a table region. The table size ranges in lengths like the machine.  Larger table sizes can accommodate up to king sized quilts.  Typically, the table contains a flat region on which a layer of thin, clear plastic lies, on which patterns and other designs to follow can be placed.
+
+The sewing machine head is large and made of industrial strength metal.  It can be either hand-guided or computer guided, with controls at both the front and back ends to guide the head. For a full range of movement, the sewing machine head is placed on wheels that run on metal tracks along the frame of the machine.  The sewing machine head can also come with a laser pointer, which can be used to guide the quilter along patterns, called pantographs. Pantographs are placed underneath the clear plastic region of the table. The hand-guided machine head contains handles by which the quilter can guide the machine along the fabric to sew the design of choice. A computer-guided machine head is hooked up to a computer system that allows the quilter to select the chosen design to be sewn onto the fabrics. With the push of a button on the computer's keyboard, the longarm sewing machine will sew the design onto the quilt with minimal physical assistance.
+
+The frame of the machine consists of several rolling bars onto which layers of the quilt sandwich are placed. On one side of the machine, two rollers, known as the feeder bars, are present with a muslin leader onto which the backing and the quilt top can be attached. Material is attached by sewing pins, a snap system, or sewing zippers to the muslin leaders and then the material is stretched tight over the belly bar, which ensures that the layered material is smooth and taut according to the sewers’ desires.
+
+The backing of the quilt is attached by sewing pins, a snap system, or zippers to a third roller, known as the “take-up” roller.  The take-up roller is the region onto which the quilted layers can be moved to allow the quilter to gain access to a new region of quilt top.[5] The backing, quilt top, and batting are commonly basted together by a single-row of stitching, but can also be pinned together onto the muslin leader on the take-up roller. The stretched region of fabric that spans between the take-up roller and the feeder rollers is the area over which the fabric layers are actually sewn together into the finished product.  The longarm quilting machine typically comes with electronic controls that allow the user to adjust the fabric that spans the area over which the machine runs.[1]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public function store(BlogRequest $request)
+    {
+        $blog = new Blog($request->except('image', 'tags'));
+        if ($request->hasFile('image')) {
+            $file = $request->file('image');
+            $filename = $file->getClientOriginalName();
+            $extension = $file->getClientOriginalExtension() ?: 'png';
+            $folderName = '/uploads/blog/';
+            $picture = str_random(10) . '.' . $extension;
+            $blog->image = $picture;
+        }
+        $blog->user_id = Sentinel::getUser()->id;
+        $blog->save();
+        if ($request->hasFile('image')) {
+            $destinationPath = public_path() . $folderName;
+            $request->file('image')->move($destinationPath, $picture);
+        }
+        $blog->tag($request->tags);
+        if ($blog->id) {
+            return redirect('admin/blog')->with('success', trans('blog/message.success.create'));
+        } else {
+            return Redirect::route('admin/blog')->withInput()->with('error', trans('blog/message.error.create'));
+        }
+    }
+
+
+
+
+
+    protected function checkPage($page, $slug)
+    {
+        if ($page) {
+            return;
+        }
+        if ($slug == 'home') {
+            throw new Exception('The homepage is missing.');
+        }
+        throw new NotFoundHttpException('Page Not Found');
+    }
+
+
+
+
+public function run()
+    {
+        DB::table('comments')->truncate();
+        $comment = [
+            'body'       => 'This is an example comment.',
+            'user_id'    => 1,
+            'post_id'    => 1,
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now(),
+        ];
+        DB::table('comments')->insert($comment);
+    }
+
+
+
+
+'comment'=>'required|min:10',
+'rating'=>'required|integer|between:1,5'
+
+
+
+
+->withPivot('product_feature_product_option')
+->withPivot('image_product_option')
+->withPivot('product_option_video')
+
+->withPivot('image_profile')
+->withPivot('image_location')
+
+
+
+  public function storeImageForProduct($productID, $comment, $rating)
+    {
+        $product = Product::find($productID);
+        //$this->user_id = Auth::user()->id;
+        $this->comment = $comment;
+        $this->rating = $rating;
+        $product->reviews()->save($this);
+        // recalculate ratings for the specified product
+        $product->recalculateRating($rating);
+    }
+
+
+
+
+    // Getters
+    public function getIconAttribute()
+    {
+        return $this->attributes['icon'] ? url($this->attributes['icon']) : 'http://placehold.it/20x20';
+    }
+
+    public function getBannerAttribute()
+    {
+        return $this->attributes['banner'] ? url($this->attributes['banner']) : 'http://placehold.it/300x240';
+    }
+
+
+
+    public function images()
+    {
+        return $this->hasMany(Image::class, 'product_id');
+    }
+
+    public function productImages()
+    {
+        return $this->hasMany(Image::class, 'product_id');
+    }
+
+
+
+
+
+
+
+// Scopes
+
+    public function scopePublished($query)
+    {
+        return $query->where('published', true);
+    }
+
+    public function scopePopular($query)
+    {
+        return $query->published()->orderBy('rating_cache','desc');
+    }
+
+    public function scopeNewest($query)
+    {
+        return $query->published()->orderBy('created_at','desc');
+    }
+
+    public function scopeByname($query)
+    {
+        return $query->published()->orderBy('name','asc');
+    }
+
+    // The way average rating is calculated (and stored) is by getting an average of all ratings,
+    // storing the calculated value in the rating_cache column (so that we don't have to do calculations later)
+    // and incrementing the rating_count column by 1
+
+    public function recalculateRating($rating)
+    {
+        $reviews = $this->reviews()->notSpam()->approved();
+        $avgRating = $reviews->avg('rating');
+          $this->rating_cache = round($avgRating,1);
+          $this->rating_count = $reviews->count();
+        $this->save();
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ "prettus/l5-repository": "^2.5"
+
+
+dd(Model::with([App\Models\Product::class, App\Models\Image::::class])->get())
+
+dd(Model::with(['product', 'image'])->get())
+
+dd(Product::with(['product_id', 'id'])->get())
+    public function product()
+    {
+      return $this->belongsTo(Product::class, 'product_id');
+    }
+
+
+  /**
+   * Get all the media assigned to the current model instance
+   *
+   * @param $group string
+   *  The file group to retrieve
+   *
+   * @return object
+   *  A Illuminate\Database\Eloquent\Collection Object of
+   *  Devfactory\Media\Models\Media Objects
+   */
+  public function getMedia($group = NULL) {
+    if (is_null($group)) {
+      return $this->media()->orderBy('weight', 'ASC')->get();
+    }
+    return $this->getMediaByGroup($group);
+  }
+
+
+  /**
+   * Get all the media assigned to the current model instance
+   * by the given $group
+   *
+   * @param $group string
+   *  The file group to retrieve
+   *
+   * @return object
+   *  A Illuminate\Database\Eloquent\Collection Object of
+   *  Devfactory\Media\Models\Media Objects
+   */
+  private function getMediaByGroup($group) {
+    return $this->media()
+      ->where('group', $group)
+      ->orderBy('weight', 'ASC')
+      ->get();
+  }
+
+
+
+
+
+  Route::post('/upload', function () {
+
+    $input = Input::all();
+
+    $rules = array(
+        'file' => 'image|max:3000',
+    );
+
+    $validation = Validator::make($input, $rules);
+
+    if ($validation->fails())
+    {
+        return Response::make($validation->errors->first(), 400);
+    }
+
+    $file      = Input::file('file');
+    $albumID   = Input::get('albumID');
+
+    if($file) {
+
+        $destinationPath = public_path() . '/uploads/' . $albumID ;
+        $filename = $file->getClientOriginalName();
+
+        $upload_success = Input::file('file')->move($destinationPath, $filename);
+
+        if ($upload_success) {
+
+            // resizing an uploaded file
+            Image::make($destinationPath . $filename)->resize(100, 100)->save($destinationPath . "100x100_" . $filename);
+
+            return Response::json('success', 200);
+        } else {
+            return Response::json('error', 400);
+        }
+    }
+});
+
+
+
+Route::post('/upload', function () {
+
+    $input = Input::all();
+
+    $rules = array(
+        'file' => 'image|max:3000',
+    );
+
+    $validation = Validator::make($input, $rules);
+
+    if ($validation->fails())
+    {
+        return Response::make($validation->errors->first(), 400);
+    }
+
+    $file = Input::file('file');
+    $albumID = Input::get('albumID');
+    $museumName = Input::get('museumName');
+
+    if($file) {
+
+        $destinationPath = public_path() . '/uploads/'.$museumName . '/' . $albumID.'/';
+        $filename = $file->getClientOriginalName();
+
+        $upload_success = Input::file('file')->move($destinationPath, $filename);
+
+        if ($upload_success) {
+
+            // resizing an uploaded file
+            Image::make($destinationPath . $filename)->resize(100, 100)->save($destinationPath . "100x100_" . $filename);
+
+            $image = New Image();
+            $image->title = $filename;
+            $image->path = $destinationPath;
+            $image->album_id = $albumID;
+            $image->save();
+
+            return Response::json('success', 200);
+        } else {
+            return Response::json('error', 400);
+        }
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  public function up()
+    {
+        Schema::create('shop_products', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('title');
+            $table->string('alias')->nullable();
+            $table->string('image')->nullable();
+            $table->text('description')->nullable();
+            $table->float('price')->default(0);
+            $table->text('galleries')->nullable();
+            $table->integer('status')->default(1);
+            $table->timestamps();
+        });
+        Schema::create('shop_categories', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('name');
+            $table->string('alias')->nullable();
+            $table->string('image')->nullable();
+            $table->text('description')->nullable();
+            $table->unsignedInteger('parent_id')->default(0);
+            $table->integer('order')->default(0);
+            $table->integer('status')->default(1);
+            $table->timestamps();
+        });
+    }
+
+    protected $guarded = ['id'];
+    public function category(){
+        return $this->belongsTo('Category','category_id');
+    }
+    public function tags(){
+        return $this->belongsToMany('Tag','product_tag','product_id','tag_id');
+    }
+
+
+   public function setReleaseDateAttribute($value){
+        if(isset($value)&&($value!=null)&&($value!=0)){
+            $date1 = date('Y-m-d', strtotime($value));
+            $this->attributes['release_date'] = $date1;
+        }else{
+            $this->attributes['release_date'] = null;
+        }
+    }
+
+
+       <ul class="list-group">
+           @if(isset($product) && $product->lists->count()>0)
+                    @foreach($product->lists as $list)
+                <li class="list-group-item">{{ $list->item }}</li>
+                @endforeach
+           @endif
+            </ul>
+
+
+
+
+        Schema::create('listitems', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('product_id')->unsigned()->index();
+            $table->string('item');
+            $table->timestamps();
+        });
+
+
+
+
+    public function upload()
+    {
+        $input = $request->all();
+
+        $product = $this->productRepository->create($input);
+        $product = Product::firstOrCreate(['id' => 1]);
+
+        if (Input::hasFile('image')) {
+            $product->saveMedia(Input::file('image'));
+            $product->saveMedia(Input::file('product_image'), 'product_image');
+            $product->saveMedia(Input::file('image_2'), 'image_2');
+        }
+
+        return Redirect::route('route');
+    }
+
+
+
+
+
+http://andremadarang.com/implementing-a-shopping-cart-in-laravel/
+
+https://laracasts.com/series/laravel-5-from-scratch
+
+
+
+    //private function fileUpload($request)
+    //{
+    //  $imageTempName = $request->file('photo')->getPathname();
+    //  $imageName = $request->file('photo')->getClientOriginalName();
+    //  $path = base_path() . '/public/uploads/consultants/images/';
+    //  $request->file('photo')->move($path , $imageName);
+    //  DB::table('consultants')
+    //          ->where('photo', $imageTempName)
+    //          ->update(['photo' => $imageName]);
+    //}
+
+
+
+          if(Input::file())
+          {
+
+            //$image = Input::file('image_1');
+            $file = Input::file('primary_image');
+            //$image_name = time()."-".$file->getClientOriginalName();
+            $image_name = $file->getClientOriginalName();
+            $file->move('uploads/products', $image_name);
+
+            $file = Image::make(sprintf('uploads/products/%s', $image_name))->resize(720, 960)->save();
+            $file = Image::make(sprintf('uploads/products/%s', $image_name))->resize(720, 960)->save();
+
+
+            //$lightbox = Image::make($file->getRealPath())->resize(720, 960);
+            //$catalog_size = Image::make($file->getRealPath())->resize(440, 586);
+            //$grid_size = Image::make($file->getRealPath())->resize(270, 360);
+            //$additional_size = Image::make($file->getRealPath())->resize(64, 64);
+            //$prod_thumb_size = Image::make($file->getRealPath())->resize(100, 75);
+            //$admin_size = Image::make($file->getRealPath())->resize(300, 300);
+
+            //$image_name  = time()."-". $image->getClientOriginalExtension();
+
+            //$path = public_path('products/' . $image_name);
+
+
+            //Image::make($image->getRealPath())->resize(720, 960)->save($path);
+            //$product->image_1 = $image_name;
+            //$product->save();
+
+            //
+            //$image_name = time()."-".$file->getClientOriginalName();
+            //$file->move('uploads', $image_name);
+            //$image = Image::make(sprintf('uploads/%s', $image_name))->resize(200, 200)->save();
+
+
+        }
+
+
+class Category extends \Eloquent {
+    protected $guarded = ['id'];
+    public function product(){
+        return $this->hasMany('Product','category_id');
+    }
+}
+
+
+
+$image = Image::firstOrCreate(['id' => 1]);
+
+$extension = $file->getClientOriginalExtension();
+$filename = $file->getClientOriginalName();
+//$slug = str_replace('.', '', $slug);
+//$slug = str_replace(' ','_', $slug);
+//$slug = str_replace('-','_', $slug);
+$slug = pathinfo($filename, PATHINFO_FILENAME);
+
+$destinationPath = public_path() . '/uploads/products/'. $slug;
+if(!file_exists($destinationPath)) File::makeDirectory($destinationPath);
+
+$productDestinationPath = public_path() . '/uploads/products/product/'. $slug;
+if(!file_exists($productDestinationPath)) File::makeDirectory($productDestinationPath);
+
+$catDestinationPath = public_path() . '/uploads/products/catalog/'. $slug;
+if(!file_exists($catDestinationPath)) File::makeDirectory($catDestinationPath);
+
+$gridDestinationPath = public_path() . '/uploads/products/grid/'. $slug;
+if(!file_exists($gridDestinationPath)) File::makeDirectory($gridDestinationPath);
+
+$thumbDestinationPath = public_path() . '/uploads/products/thumb/'. $slug;
+if(!file_exists($thumbDestinationPath)) File::makeDirectory($thumbDestinationPath);
+
+$picture = $slug . "." . $extension;
+
+$file->move($destinationPath, $picture);
+$file->move($productDestinationPath, $picture);
+$file->move($thumbDestinationPath, $picture);
+$file->move($catDestinationPath, $picture);
+$file->move($gridDestinationPath, $picture);
+
+
+
+  /**
+     * Get the categories for the product.
+     */
+    public function categories()
+    {
+        return $this->belongsToMany('PhpSoft\ShoppingCart\Models\Category', 'shop_category_product');
+    }
