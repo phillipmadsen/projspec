@@ -22,3 +22,32 @@ public function edit($id)
 
 
 https://laracasts.com/@michalis
+
+
+@if($product->variations)
+<div class="tab-content clearfix" id="tabs-2">
+ <table class="table table-striped table-bordered">
+        <tbody>
+        @foreach($product->variations as $variation)
+            <tr>
+                <td>{!! $variation->attribute_name !!}</td>
+                <td>{!! $variation->product_attribute_value !!}</td>
+            </tr>
+        @endforeach
+        </tbody>
+    </table>
+</div>
+@endif
+
+<ul class="iconlist ">
+@if($product->features)
+    @foreach($product->features as $feature)
+        <li>
+        @if($feature->useicon == true)
+        {!! $feature->icon !!}
+        @endif
+        {!! $feature->feature_name !!}
+        </li>
+    @endforeach
+@endif
+</ul>
