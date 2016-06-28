@@ -1,5 +1,14 @@
 my useful links doc
 
+
+
+
+https://www.youtube.com/watch?v=atlrmyhrCzk&index=10&list=PLl0rlrKS77MpgHg17oW4AvLGUXt8ntVDy
+
+
+
+
+
 http://solutionoptimist.com/2013/12/28/awesome-github-tricks/
 
 
