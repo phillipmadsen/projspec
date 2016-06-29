@@ -1,0 +1,66 @@
+new tables
+
+SOLVED How to save multiple pictures into table by a given item id? Laravel
+
+
+
+CREATE TABLE IF NOT EXISTS `images` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `path` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `created_at` timestamp NOT NULL,
+  `updated_at` timestamp NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=35 ;
+
+
+
+CREATE TABLE IF NOT EXISTS `image_product` (
+  `product_id` int(11) unsigned DEFAULT NULL,
+  `image_id` int(11) unsigned DEFAULT NULL,
+  KEY `image_product_id` (`product_id`),
+  KEY `image_image_id` (`image_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `image_product`
+--
+ALTER TABLE `image_product`
+  ADD CONSTRAINT `image_image_id` FOREIGN KEY (`image_id`) REFERENCES `images` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `image_product_id` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  
+  
+  $product->picture()->save($picture);
+  
+  
+  http://laravel.io/forum/11-14-2014-pictures-linked-to-posts
+  
+  
+  
+  
+  $uploadPicture = array();
+
+    foreach( $pictures as $picture )
+    {
+
+        $destinationPath = public_path().'/assets/img';
+        $fileName = $picture->getClientOriginalName();
+        $uploadSuccess = $picture->move($destinationPath, $fileName);
+
+
+        $pictureModel = new Picture;
+        array_push($uploadPicture, new Picture(array('picture_name' => $fileName)));
+    }
+
+    $item = Item::find($item->id);
+
+    $item->pictures()->saveMany($uploadPicture);
+
+
+    if($item->save() && $item->pictures()->saveMany($uploadPicture))
+    {
+        echo "<pre>".var_dump(Input::file('pictures'))."</pre>";
+    }
