@@ -41,7 +41,7 @@ ALTER TABLE `image_product`
   
   
   
-  $uploadPicture = array();
+  	$uploadPicture = array();
 
     foreach( $pictures as $picture )
     {
@@ -52,7 +52,9 @@ ALTER TABLE `image_product`
 
 
         $pictureModel = new Picture;
-        array_push($uploadPicture, new Picture(array('picture_name' => $fileName)));
+        array_push($uploadPicture, new Picture(array(
+        'picture_name' => $fileName
+        )));
     }
 
     $item = Item::find($item->id);
@@ -64,3 +66,7 @@ ALTER TABLE `image_product`
     {
         echo "<pre>".var_dump(Input::file('pictures'))."</pre>";
     }
+    
+    
+    original_name
+filename
