@@ -208,3 +208,5 @@ Follow my other gist for useful Sublime Text shortcuts (on a Mac). Commit these 
 
 Make sure you get familiar with the extremely useful _[Find in Files](http://www.macdrifter.com/2012/07/a-couple-of-sublime-text-tips.html)_ feature along with _[Fuzzy searches](http://docs.sublimetext.info/en/latest/file_management/file_management.html)_.
 
+
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl 
