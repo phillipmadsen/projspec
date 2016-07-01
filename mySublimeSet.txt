@@ -1,0 +1,118 @@
+{
+	"always_show_minimap_viewport": true,
+	  "auto_complete": true,
+    "auto_complete_commit_on_tab": true,
+    "auto_complete_with_fields": true,
+	"auto_format": false,
+	"auto_indent": true,
+	"bold_folder_labels": true,
+	"caret_extra_bottom": 2,
+	"caret_extra_top": 2,
+	"caret_extra_width": 3,
+	"caret_style": "solid",
+	"color_scheme": "Packages/Theme - Windows 10/Widget - Windows 10.tmTheme",
+	"ensure_newline_at_eof_on_save": true,
+	"exclude_git_folder": true,
+	"exclude_hidden_files": true,
+	"exclude_hidden_folders": true,
+	"extend_env":
+	{
+		"PATH": "/usr/local/bin"
+	},
+	"file_exclude_patterns":
+	[
+		"*.sublime-workspace",
+		".DS_Store"
+	],
+	"find_selected_text": true,
+	"folder_exclude_patterns":
+	[
+		".git",
+		".awestruct",
+		".sass-cache",
+		"_developer-materials",
+		"_downloads",
+		"_tmp",
+		"_specs",
+		"_site",
+		"_products",
+		"_projects"
+	],
+	"font_face": "inconsolata",
+	"font_options":
+	[
+		"subpixel_antialias"
+	],
+	"highlight_active_tab": true,
+	"highlight_line": false,
+	"hot_exit": true,
+	"ignored_packages":
+	[
+		"CopyWithQuotes",
+		"Go",
+		"GoImports",
+		"GoSublime",
+		"SyncedSideBar",
+		"Vintage"
+	],
+	"indent_handlebars": true,
+	"indent_inner_html": true,
+	"indent_scripts": true,
+	"line_numbers": true,
+	"line_padding_bottom": 1,
+	"line_padding_top": 0,
+	"match_brackets": true,
+	"match_brackets_angle": true,
+	"match_brackets_braces": true,
+	"match_brackets_content": true,
+	"match_brackets_square": true,
+	"max_preserve_newlines": 0,
+
+	"node_path":
+	{
+		"linux": "/usr/bin/nodejs",
+		"osx": "/usr/local/bin/node",
+		"windows": "/C/Program Files/nodejs/node.exe"
+	},
+	"origami_auto_zoom_on_focus": false,
+	"overlay_scroll_bars": "enabled",
+	"php_cs_fixer_executable_path": "/C/Users/sandbox/AppData/Roaming/Composer/vendor/bin/php-cs-fixer.bat",
+	"php_path": "/C/PHP/php.exe",
+	"phpcbf_executable_path": "/C/Users/sandbox/AppData/Roaming/Composer/vendor/bin/phpcbf.bat",
+	"phpcbf_path": "/C/Users/sandbox/AppData/Roaming/Composer/vendor/bin/phpcbf.bat",
+	"phpcs_executable_path": "/C/Users/sandbox/AppData/Roaming/Composer/vendor/bin/phpcs.bat",
+	"phpcs_path": "/C/Users/sandbox/AppData/Roaming/Composer/vendor/bin/phpcs.bat",
+	"phpmd_executable_path": "/C/Users/sandbox/AppData/Roaming/Composer/vendor/bin/phpmd.bat",
+	"preserve_newlines": false,
+	"python_path": "/C/Users/sandbox/AppData/Local/Programs/Python/Python35",
+	"scroll_past_end": true,
+	"show_encoding": true,
+	"show_full_path": true,
+	"show_line_endings": true,
+	"show_tab_close_buttons": true,
+	"theme": "Seti.sublime-theme",
+	"translate_tabs_to_spaces": false,
+	"trim_automatic_white_space": false,
+	"trim_trailing_white_space_on_save": true,
+	"wide_caret": true,
+	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?",
+	"word_wrap": false,
+	 "default_encoding": "UTF-8",
+    "detect_indentation": true,
+    "font_face": "Menlo",
+      "folder_exclude_patterns":
+        [
+            ".git",
+            ".bundle",
+            ".sass-cache"
+        ],
+    "font_options":
+        [
+            "subpixel_antialias"
+        ],
+    "font_size": 16.0,
+    "highlight_line": true,
+    "highlight_modified_tabs": true,
+"trim_trailing_white_space_on_save": true,
+    "word_wrap": true,
+}
