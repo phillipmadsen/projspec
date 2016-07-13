@@ -1,0 +1,100 @@
+upload.txt
+
+
+    //  $product = Product::findOrFail($id)->first();
+        //$product->images()->create(['path' => '/uploads/products/{$name}']);
+        //$product->images()->create(['image' => 'mightbeWorking.jpg']);
+
+        //$file = $request->file('file');
+
+        $name = $file->getClientOriginalName();
+        $file->move('uploads/products/', $name);
+
+
+
+
+
+
+
+
+
+           //App\Http\Controllers\ProductController@addImage
+    //
+    //flash()->success('Successful Upload', 'your product images are saved');
+    public function postImage(ProductImage $productImage, Request $request)
+    {
+        $validator = Validator::make($request, ProductImage::$rules, ProductImage::$messages);
+
+        //dd($request->file('file'));
+        $photo = $request->file('file');
+
+        $originalName = $photo->getClientOriginalName();
+        $extension = $photo->getClientOriginalExtension();
+        $originalNameWithoutExt = substr($originalName, 0, strlen($originalName) - strlen($extension) - 1);
+
+        $filename = $this->sanitize($originalNameWithoutExt);
+        $allowed_filename = $this->createUniqueFilename( $filename, $extension );
+
+        $uploadSuccess1 = $this->original( $photo, $allowed_filename );
+        $uploadSuccess2 = $this->icon( $photo, $allowed_filename );
+
+        $sessionImage = new ProductImage;
+        $sessionImage->filename      = $allowed_filename;
+        $sessionImage->original_name = $originalName;
+        // $sessionImage->product_id = 3;
+        $sessionImage->save();
+
+
+        return Response::json();
+
+
+
+        // return 'done';
+
+    }
+
+
+
+
+
+
+
+
+
+
+//$originalName = $photo->getClientOriginalName();
+//$extension = $photo->getClientOriginalExtension();
+//$originalNameWithoutExt = substr($originalName, 0, strlen($originalName) - strlen($extension) - 1);
+//
+//$filename = $this->sanitize($originalNameWithoutExt);
+//$allowed_filename = $this->createUniqueFilename( $filename, $extension );
+    //flash()->success('Successful Upload', 'your product images are saved');
+    public function addImage(Request $request)
+    {
+        // echo "<pre>";
+        // print_r($request->all());
+        // echo "</pre>pre>";
+        //dd($request->file('file'));
+
+        $file = $request->file('image');
+        $originalName = $file->getClientOriginalName();
+        $name = $file->getClientOriginalName();
+        $file->move('uploads/products/', $name);
+
+        $destinationPath = public_path() . '/uploads/products/' ;
+
+        //$product = Product::locatedAt($category, $name)->first();
+
+        $product = Product::preUploadImagesBeforeProductCreation($id);
+        $product->images()->create(['path' => '/uploads/products/{$name}']);
+        //$product->images()->create(['image' => 'mightbeWorking.jpg']);
+        dd($product);
+        $sessionImage = new ProductImage;
+        $sessionImage->filename      = $allowed_filename;
+        $sessionImage->original_name = $originalName;
+        // $sessionImage->product_id = 3;
+        $sessionImage->save();
+
+        return 'done';
+
+    }
